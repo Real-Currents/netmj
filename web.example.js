@@ -5,13 +5,15 @@
  */
 var web = require('./server/web.js');
 
-web.start('siteurl' /* include :port if necessary */, 
+web.start(
+  '173.246.105.50:8080', 			/* domain/ip, include :port if necessary */ 
 		
-		/* port */ 8080, 
+  8080, 			/* port */ 
 		
-		databaseURL /* ex: 'localhost/test' */,
+  'test',	/* mongodb domain/ip, ex: 'localhost/test' */
 		
-		function() {	
-			//after ready, call this
-		}
+  function() {	
+	//after ready, call this
+	return true;
+  }
 );
