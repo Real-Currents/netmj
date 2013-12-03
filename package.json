@@ -17,7 +17,7 @@
 	"send":"",
 	"debug":"",
 	"bytes":"",
-	"connect":"",
+	"connect":"2.11.2",
 	"cookie":"",
 	"cookie-signature":"",
 	"express":"",

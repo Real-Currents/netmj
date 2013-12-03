@@ -24,9 +24,6 @@ exports.start = function(host, port, database, init) {
 	console.log('Starting');
     
 	var Server = { 
-		name: 'Netention',
-		description: 'http://netention.org',
-		
 		memoryUpdatePeriodMS: 5000,
         plugins: { },
         permissions: { },
@@ -40,6 +37,12 @@ exports.start = function(host, port, database, init) {
     var plugins = { };
     
 	var that = { };
+    that = init(Server);
+	for( var p in that ) {
+		/* Initialize the server with custom props set by init funtion */
+		Server[p] = that[p];
+	}
+    
 	
 	var tags =  { };
     var properties = { };
@@ -1031,12 +1034,8 @@ exports.start = function(host, port, database, init) {
     		plugin(that, file);
     	});
     }
-	
-    that.permissions = Server.permissions;
 
     nlog('Ready');
-    
-    init(that);
 	
 	return that;
 		
