@@ -75,7 +75,7 @@ function getRelevant(sort, scope, semantic, s, o, maxItems) {
 	});
     
     if (relevant.length > maxItems) {
-        o.prepend('<span>Too many: 1..' + maxItems + ' of ' + relevant.length + '</span>');
+        o.prepend('<span>1..' + maxItems + ' of ' + relevant.length + ' </span>');
     }
     else {
         

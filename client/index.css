@@ -54,16 +54,13 @@
 	display: none;
 }
 
-#ViewSelect {
-}
-.ViewSelectNormal {
-}
 .ViewSelectIndented {
     padding-left: 7.5%;
 }
 
 #ViewSelect {
     float: left;
+	margin-top:	2px;
 }
 #ViewOptions {
     text-align: right;
