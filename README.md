@@ -1,4 +1,4 @@
-![Netention logo](master/doc/netention_logo_6.png)
+![Netention logo](doc/netention_logo_6.png)
 
 Netention for Node.JS
 =====================
@@ -13,17 +13,17 @@ Netention aims to solve, in general, all resource management and planning issues
 
 Netention is under development and is experimental.  Use at your own risk
 
-[User Guide](blob/master/doc/netention_user_guide.md)
+[User Guide](doc/netention_user_guide.md)
 *   What it does
 *   How to use it
 *   Netention Philosophy
 
-[System Guide](blob/master/doc/netention_system_guide.md)
+[System Guide](doc/netention_system_guide.md)
 *   System requirements
 *   How to install
 *   How to maintain and administer a Netention node
 
-[Development Plan](blob/master/doc/netention_development_plan.md)
+[Development Plan](doc/netention_development_plan.md)
 *   Features
 *   Planned improvements and fixes
 
@@ -45,6 +45,8 @@ A semantic concept represents each agent (ex: a human) participating in interact
 
 A Network is a community-managed web service to which clients connect.  Servers communicate with other servers in a P2P network.
 
-http://netention.org
+http://global-survival.org
 
-![Netention logo](master/doc/netention_logo_1.png)
+![Netention logo](doc/netention_logo_1.png)
+
+![GSs logo](doc/gss_logo_1.svg)
