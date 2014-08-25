@@ -402,7 +402,7 @@ function netention(f) {
             getLatestObjects : function(num, onFinished) {
                 var that = this;
                 $.getJSON('/object/latest/' + num + '/json', function(objs) {
-                	for (var k = 0; k < objs.length; k++) {
+                	if(!! objs ) for (var k = 0; k < objs.length; k++) {
             			var x = objs[k];
             			that.notice(x);
             		}
@@ -413,7 +413,7 @@ function netention(f) {
             getObjects: function(query, onObject, onFinished) {
                 var that = this;
             	this.socket.emit('getObjects', query, function(objs) {
-            		for (var k in objs) {
+            		if(!! objs ) for (var k in objs) {
             			var x = objs[k];
             			that.notice(x);
             			if (onObject!=null)
