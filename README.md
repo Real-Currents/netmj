@@ -1,7 +1,3 @@
-*This is a secondary branch used for development and organization. It will eventually be merged into the master*
-
-![NetMJ logo](doc/netention_logo_6.png)
-
 NetMJ
 =====================
 
