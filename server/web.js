@@ -2,18 +2,20 @@ var memory = require('./memory.js');
 var util = require('../client/util.js');
 var feature = require('./feature.js');
 //var cortexit = require('./cortexit.js');
+var bodyParser = require('body-parser');
 var expressm = require('express');
 var express = expressm();
+var cookieParser = require('cookie-parser');
 var connect = require('connect');
 var http = require('http')
   , url = require('url')
   , fs = require('fs')
   , sys = require('util')
   , socketio= require('socket.io')
-  , nodestatic = require('node-static')
   , server;
 var mongo = require("mongojs");
 var request = require('request');
+var session = require('express-session')
 var _ = require('underscore');
 
 /**
@@ -106,7 +108,7 @@ exports.start = function(host, port, database, init) {
     }
 	 
 	function loadState(f) {
-		var db = mongo.connect(databaseUrl, collections);
+		var db = mongo(databaseUrl, collections);
 		
 		db.obj.find({ tag: { $in: [ 'ServerState' ] } }).limit(1).sort({when:-1}, function(err, objs) {
     		  db.close();
@@ -156,7 +158,7 @@ exports.start = function(host, port, database, init) {
         
 		//TODO move to 'removed' db collection
 		
-		var db = mongo.connect(databaseUrl, collections);
+		var db = mongo(databaseUrl, collections);
 		db.obj.remove({ id: objectID }, function(err, docs) {
 			db.close();
             
@@ -213,7 +215,7 @@ exports.start = function(host, port, database, init) {
 				
 		attention.notice(o, 0.1);
 		
-		var db = mongo.connect(databaseUrl, collections);
+		var db = mongo(databaseUrl, collections);
 		db.obj.update({ id: o.id }, o, {upsert: true}, function(err) {
 			if (err) {
 				nlog('notice: ' + err);
@@ -256,7 +258,7 @@ exports.start = function(host, port, database, init) {
 			whenFinished(tags[uri]);
 		}
 		else {
-			var db = mongo.connect(databaseUrl, collections);
+			var db = mongo(databaseUrl, collections);
 			db.obj.find({ 'id': uri }, function(err, docs) {
     			db.close();
 				if (err) {
@@ -272,7 +274,7 @@ exports.start = function(host, port, database, init) {
 	}
 
     function getObjectsByAuthor(a, withObjects) {
-    	var db = mongo.connect(databaseUrl, collections);
+    	var db = mongo(databaseUrl, collections);
         db.obj.find({author: a}, function(err, docs) {            
     		if (err) {
 				nlog('getObjectsByAuthor: ' + err);            
@@ -287,7 +289,7 @@ exports.start = function(host, port, database, init) {
 	
     //TODO fix this to use the new tag data model
 	function getObjectsByTag(t, withObject) {
-		var db = mongo.connect(databaseUrl, collections);
+		var db = mongo(databaseUrl, collections);
 		//db.obj.find({ tag: { $in: [ t ] } }, function(err, docs) {
         db.obj.find(function(err, docs) {
             
@@ -308,7 +310,7 @@ exports.start = function(host, port, database, init) {
 
     /*
     function getObjectsByTags(tags, withObjects) {
-		var db = mongo.connect(databaseUrl, collections);
+		var db = mongo(databaseUrl, collections);
 		db.obj.find({ tag: { $in: tags } }, function(err, docs) {
 	
 			db.close();
@@ -325,7 +327,7 @@ exports.start = function(host, port, database, init) {
     */
     
     function getReport(lat, lon, whenStart, whenStop, withReport) {
-    	var db = mongo.connect(databaseUrl, collections);
+    	var db = mongo(databaseUrl, collections);
         
         var histogram = { };
         var numBins = 38;
@@ -383,7 +385,7 @@ exports.start = function(host, port, database, init) {
     
 	function getTagCounts(whenFinished) {	
 		
-		var db = mongo.connect(databaseUrl, collections);
+		var db = mongo(databaseUrl, collections);
 		db.obj.find(function(err, docs) {
 			if (err) {
 				nlog('getTagCounts: ' + err);            
@@ -419,7 +421,7 @@ exports.start = function(host, port, database, init) {
 		Server.when = t;            
 	
 
-		var db = mongo.connect(databaseUrl, collections);
+		var db = mongo(databaseUrl, collections);
 		
 		db.obj.save(Server, function(err, saved) {
     		  db.close();
@@ -493,25 +495,35 @@ exports.start = function(host, port, database, init) {
 	
 	nlog('Web server on port ' + Server.port);
 	
-	var io = socketio.listen(httpServer);
+	var io = socketio.listen(httpServer, {
+
+		// io.enable('browser client minification');  // send minified client
+		// io.enable('browser client etag');          // apply etag caching logic based on version number
+		// io.enable('browser client gzip');          // gzip the file
+		// io.set('log level', 1);                    // reduce logging
+		// io.set('transports', [                     // enable all transports (optional if you want flashsocket)
+		//     'websocket'
+		// //  , 'flashsocket'
+		//   , 'htmlfile'
+		//   , 'xhr-polling'
+		//   , 'jsonp-polling'
+		// ]);
+		// io.set("polling duration", 10);
+		'transports': [                     // enable all transports
+			'websocket'
+			// , 'htmlfile'
+			// , 'xhr-polling'
+			// , 'jsonp-polling'
+		]
+	});
 	
-	io.enable('browser client minification');  // send minified client
-	io.enable('browser client etag');          // apply etag caching logic based on version number
-	io.enable('browser client gzip');          // gzip the file
-	io.set('log level', 1);                    // reduce logging
-	io.set('transports', [                     // enable all transports (optional if you want flashsocket)
-	    'websocket'
-	//  , 'flashsocket'
-	  , 'htmlfile'
-	  , 'xhr-polling'
-	  , 'jsonp-polling'
-	]);
-	io.set("polling duration", 10); 
-	
-	var cookieParser = expressm.cookieParser('netention0')
-	  , sessionStore = new connect.middleware.session.MemoryStore();
+	var sessionStore = session({ // new session.MemoryStore();
+		resave: true,
+		saveUninitialized: true,
+		secret: '$ecr3t'
+	});
 	var SessionSockets = require('session.socket.io')
-	  , sessionSockets = new SessionSockets(io, sessionStore, cookieParser);
+	  , sessionSockets = new SessionSockets(io, sessionStore, cookieParser('netention0'));
 	
 	//PASSPORT -------------------------------------------------------------- 
 	var passport = require('passport')
@@ -526,14 +538,14 @@ exports.start = function(host, port, database, init) {
 	  done(null, obj);
 	});
 	
-	express.configure(function() {
-	  express.use(cookieParser);
-	  express.use(expressm.bodyParser());
-	  express.use(expressm.session({store:sessionStore}));
+	// express.configure(function() {
+	  express.use(cookieParser('netention0'));
+	  express.use(bodyParser.urlencoded({ extended: false }));
+	  express.use(sessionStore);
 	  express.use(passport.initialize());
 	  express.use(passport.session());
-	  express.use(express.router);      
-	});                        
+	  express.use(expressm.Router());
+	// });
 	
 	
 	passport.use(new OpenIDStrategy({
@@ -644,7 +656,7 @@ exports.start = function(host, port, database, init) {
 	});
     express.get('/object/latest/:num/json', function(req, res) {
         var n = parseInt(req.params.num);
-		var db = mongo.connect(databaseUrl, collections);
+		var db = mongo(databaseUrl, collections);
        	db.obj.find().limit(n).sort({modifiedAt:-1}, function(err, objs) {
                sendJSON(res, objs);
                db.close();
@@ -680,10 +692,10 @@ exports.start = function(host, port, database, init) {
 		updateInterestTime();
 		sendJSON(res, Server.interestTime);
 	});
-	express.post('/notice', function(request, response){
+	express.post('/notice', function(req, res){
 	
-	    //console.log(request.body.user.name);
-	    //console.log(request.body.user.email);
+	    //console.log(req.body.user.name);
+	    //console.log(req.body.user.email);
 	
 	});
 	express.get('/logout', function(req, res){
@@ -884,7 +896,7 @@ exports.start = function(host, port, database, init) {
         */
 	    
 	    socket.on('getObjects', function(query, withObjects) {
-			var db = mongo.connect(databaseUrl, collections);
+			var db = mongo(databaseUrl, collections);
 			db.obj.find(function(err, docs) {
 				withObjects(docs);					
 				db.close();
