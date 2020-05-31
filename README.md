@@ -1,9 +1,9 @@
 NetMJ
 =====================
 
-*NetMJ* ("Net Mage") is location-driven, semantic [groupware](https://en.wikipedia.org/wiki/Collaborative_software), intended to simulate a community of peoples' capacity and intentions for movement (_travel/mobility_) and interlink them in order to automatically discover optimal, safe and rewarding routes and/or opportunities - essentially suggesting to its participants the best path, both physically (_occupatonally/motor-sensorally_) and socially (_interactively/textually/verbally_) toward realizing the desired futures they have described.
+*NetMJ* ("Net Mage") is location-driven, semantic [groupware](https://en.wikipedia.org/wiki/Collaborative_software), intended to simulate a community of peoples' capacity and intentions for movement (_travel/mobility_) and interlink them in order to automatically discover optimal, safe and rewarding routes and/or opportunities - essentially suggesting to its participants the best paths, both physically (_occupationally/motor-sensorally_) and socially (_interactively/textually/verbally_), toward realizing the desired futures they have described.
 
-NetMJ is a tool for describing the current condition of one's life/health (“is”), and desires for potential future conditions and movements (“will be”)  – as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarations representing one's coordinates with respect to a given environment ("where") and available modes of transportation ("how"), as well as aspects about which one is concerned or interested ("why"); 
+NetMJ is a tool for describing the current condition of one's life/health (“is”) and desires for potential future conditions and movements (“will be”)  – as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarations representing one's coordinates with respect to a given environment ("where") and available modes of transportation ("how"), as well as cognitive aspects which concern or interest one ("why"); 
     
     Link the current and desired states of real and imaginary concepts - including people, environments, objects, processes, knowledge, or time.
 
@@ -11,7 +11,7 @@ NetMJ realizes one’s goals based on their desires and translates them into tan
 
 NetMJ is a system for describing states of self via conditions of the body, objects, places, times, thoughts, etc.;
     
-    Create descriptions of reality that consist of data about the state in which something presently “is”, AND statements about the desired or anticipated state in which it “will be” (usually involving ranges of acceptable indeterminate values).
+    Create descriptions of reality that consist of data about the state in which someone presently “is” AND statements about the desired or anticipated state in which that someone “will be” (usually involving ranges of acceptable indeterminate values).
 
 Using these two categories of statements ("is" and "will be"), the system can link any relevant collection of states and potential states according to a presence of mutually satisfying semantic conditions, like a lock-and-key, or receptor site on a cell; 
     
