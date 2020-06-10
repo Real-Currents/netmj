@@ -1,6 +1,8 @@
 NetMJ
 =====================
 
+_Why do things happen where they do?_
+
 *NetMJ* ("Net Mage") is location-driven, semantic [groupware](https://en.wikipedia.org/wiki/Collaborative_software), intended to simulate a community of peoples' capacity and intentions for movement (_travel/mobility_) and interlink them in order to automatically discover optimal, safe and rewarding routes and/or opportunities - essentially suggesting to its participants the best paths, both physically (_occupationally/motor-sensorally_) and socially (_interactively/textually/verbally_), toward realizing the desired futures they have described.
 
 NetMJ is a tool for describing the current condition of one's life/health (“is”) and desires for potential future conditions and movements (“will be”)  – as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarations representing one's coordinates with respect to a given environment ("where") and available modes of transportation ("how"), as well as cognitive aspects which concern or interest one ("why"); 
