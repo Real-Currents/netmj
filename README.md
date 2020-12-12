@@ -1,11 +1,15 @@
 NetMJ
 =====================
 
-_Why do things happen where they do?_
+*NetMJ* ("Net Mage") is location-driven, semantic [groupware](https://en.wikipedia.org/wiki/Collaborative_software), intended to simulate a community of peoples' capacity and intentions for movement (_travel/mobility_) and interlink them in order to automatically discover optimal, safe and rewarding routes and/or opportunities  – essentially suggesting to its participants the best paths, both physically (_occupationally/motor-sensorally_) and socially (_interactively/textually/verbally_), toward realizing the desired futures they have described.
 
-*NetMJ* ("Net Mage") is location-driven, semantic [groupware](https://en.wikipedia.org/wiki/Collaborative_software), intended to simulate a community of peoples' capacity and intentions for movement (_travel/mobility_) and interlink them in order to automatically discover optimal, safe and rewarding routes and/or opportunities - essentially suggesting to its participants the best paths, both physically (_occupationally/motor-sensorally_) and socially (_interactively/textually/verbally_), toward realizing the desired futures they have described.
+#### [_Why do things happen where they do?_](https://wiki.p2pfoundation.net/Critical_Geography)
 
-NetMJ is a tool for describing the current condition of one's life/health (“is”) and desires for potential future conditions and movements (“will be”)  – as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarations representing one's coordinates with respect to a given environment ("where") and available modes of transportation ("how"), as well as cognitive aspects which concern or interest one ("why"); 
+Beginning with our conception of the "phenomenological understanding of a _place_ as a distinctive coming together in space"([J. Agnew and D. Livingstone (eds.) Handbook of Geographical Knowledge. London: Sage, 2011](https://geog.ucla.edu/sites/default/files/users/jagnew/416.pdf)), we _observe_:
+
+    When people *move*, regardless of whether that motion is physical, economical or psychological, places *change*.
+
+NetMJ is a tool for describing the current condition of one's life/health (“is”) and desires for potential future conditions and movements (“will be”) as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarations representing one's coordinates with respect to a given environment ("where") and available modes of transportation ("how"), as well as cognitive aspects which concern or interest one ("why"); 
     
     Link the current and desired states of real and imaginary concepts - including people, environments, objects, processes, knowledge, or time.
 
