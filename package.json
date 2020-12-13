@@ -2,7 +2,7 @@
   "name": "netmj",
   "version": "0.0.1",
   "scripts": {
-    "start": "./web.start.js"
+    "start": "node web.start.js"
   },
   "dependencies": {
     "addressparser": "",
