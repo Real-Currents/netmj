@@ -9,7 +9,7 @@ Beginning with our conception of the "phenomenological understanding of a _place
 
     When people *move*, regardless of whether that motion is physical, economical or psychological, places *change*.
 
-NetMJ is a tool for describing the current condition of one's life/health (“is”) and desires for potential future conditions and movements (“will be”) as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarations representing one's coordinates with respect to a given environment ("where") and available modes of transportation ("how"), as well as cognitive aspects which concern or interest one ("why"); 
+NetMJ is a tool for describing the current condition of one's health/life/position (“is”) and desires for potential future conditions and movements (“will be”) as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarations representing one's coordinates with respect to a given environment ("where") and available modes of transportation ("how"), as well as cognitive aspects which concern or interest one ("why"); 
     
     Link the current and desired states of real and imaginary concepts - including people, environments, objects, processes, knowledge, or time.
 
