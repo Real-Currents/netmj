@@ -2,7 +2,7 @@
   "name": "netmj",
   "version": "0.0.1",
   "scripts": {
-    "start": "node web.start.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "addressparser": "",
@@ -32,7 +32,7 @@
     "passport-twitter": "",
     "qs": "",
     "range-parser": "",
-    "request": "",
+    "request": "^2.88.2",
     "sax": "",
     "send": "",
     "session.socket.io": "",
@@ -48,5 +48,9 @@
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "le_node": "^1.8.0"
   }
 }

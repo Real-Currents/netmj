@@ -1,0 +1,10 @@
+{
+    "api_key": "8lKrgg_MS0-h5H-be87gYA",
+    "domain": "127.0.0.1",
+    "port":   8080,
+    "longWait": 25000,
+    "shortWait": 2500,
+    "timeout": 360000,
+
+    "secret": "[n3t#7]"
+}
