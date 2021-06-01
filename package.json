@@ -1,9 +1,6 @@
 {
   "name": "netmj",
   "version": "0.0.1",
-  "scripts": {
-    "start": "node server.js"
-  },
   "dependencies": {
     "addressparser": "",
     "always": "",
@@ -16,7 +13,7 @@
     "cookie-parser": "^1.4.5",
     "cookie-signature": "",
     "debug": "",
-    "express": "",
+    "express": "^4.17.1",
     "express-session": "^1.17.1",
     "feedparser": "",
     "formidable": "",
@@ -29,7 +26,6 @@
     "passport": "",
     "passport-google": "",
     "passport-openid": "",
-    "passport-twitter": "",
     "qs": "",
     "range-parser": "",
     "request": "^2.88.2",
@@ -43,14 +39,14 @@
     "url": "",
     "util": "",
     "xml2object": "",
+    "xmldom": "^0.6.0",
     "ya-csv": ""
   },
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
   },
-  "devDependencies": {
-    "express": "^4.17.1",
-    "le_node": "^1.8.0"
+  "scripts": {
+    "start": "node server.js"
   }
 }

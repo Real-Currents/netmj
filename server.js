@@ -1,6 +1,6 @@
 'use strict';
 
-const Debugger = require('./lib/LogEntryDebugger'),
+const Debugger = require('./lib/Debugger'),
     express = require('express'),
 	// favicon =	require('serve-favicon'),
     fs = require('fs'),

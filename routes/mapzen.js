@@ -1,4 +1,4 @@
-var Debugger = require('../lib/LogEntryDebugger'),
+var Debugger = require('../lib/Debugger'),
     baseUrl = 'https://tile.nextzen.org',
     express = require('express'),
     mapzen = express.Router(),
