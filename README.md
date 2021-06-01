@@ -7,21 +7,36 @@ NetMJ
 
 Beginning with our conception of the "phenomenological understanding of a _place_ as a distinctive coming together in space"([J. Agnew and D. Livingstone (eds.) Handbook of Geographical Knowledge. London: Sage, 2011](https://geog.ucla.edu/sites/default/files/users/jagnew/416.pdf)), we _observe_:
 
-    When people *move*, regardless of whether that motion is physical, economical or psychological, places *change*.
+    When people *move*, regardless of 
+    whether that motion is physical, 
+    economical or psychological, 
+    places *change*.
 
-NetMJ is a tool for describing the current condition of one's health/life/position (“is”) and desires for potential future conditions and movements (“will be”) as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarations representing one's coordinates with respect to a given environment ("where") and available modes of transportation ("how"), as well as cognitive aspects which concern or interest one ("why"); 
+NetMJ is a tool for describing the current condition of one's health/life/position (“is”) and desires for potential future conditions and movements (“will be”) as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarations representing one's coordinates with respect to a given environment ("where") and available modes of transportation ("how"), as well as cognitive aspects which concern or interest one ("why"):
     
-    Link the current and desired states of real and imaginary concepts - including people, environments, objects, processes, knowledge, or time.
+    Link the current and desired states 
+    of real and imaginary concepts - 
+    including people, environments, 
+    objects, processes, knowledge, or time.
 
 NetMJ realizes one’s goals based on their desires and translates them into tangible outcomes in one’s own network. The system can then connect your descriptions to others - these are analogous to hyperlinks.  Links are useful because they suggest ways to achieve the implied desired state of something - whether you need to obtain something, whether you have something to distribute, whether you want to participate in something, whether you want others to participate in something, whether you want someone to donate something to you for free, etc... 
 
-NetMJ is a system for describing states of self via conditions of the body, objects, places, times, thoughts, etc.;
+NetMJ is a system for describing states of self via conditions of the body, objects, places, times, thoughts, etc.:
     
-    Create descriptions of reality that consist of data about the state in which someone presently “is” AND statements about the desired or anticipated state in which that someone “will be” (usually involving ranges of acceptable indeterminate values).
+    Create descriptions of reality that 
+    consist of data about the state in 
+    which someone presently “is” AND 
+    statements about the desired or 
+    anticipated state in which that someone 
+    “will be” (usually involving ranges of 
+    acceptable indeterminate values).
 
-Using these two categories of statements ("is" and "will be"), the system can link any relevant collection of states and potential states according to a presence of mutually satisfying semantic conditions, like a lock-and-key, or receptor site on a cell; 
+Using these two categories of statements ("is" and "will be"), the system can link any relevant collection of states and potential states according to a presence of mutually satisfying semantic conditions, like a lock-and-key, or receptor site on a cell:
     
-    Suggest links (representing possibilities such as transactions or assignments), ranked according to the strength of their correlation.
+    Suggest links (representing possibilities 
+    such as transactions or assignments), 
+    ranked according to the strength of 
+    their correlation.
 
 A general-purpose semantic-network computer system simulates “described experience” and discovers “possible experiences” to function as a tool for analyzing and optimizing certain qualities of a community's existence and for facilitating the utilization of all available resources to meet all immediate needs (*genesis of wealth*).
 
