@@ -1,8 +1,14 @@
-web.start.js
-xyz.js
-node_modules/
-upload/*
+*.idea
 
-/nbproject/private/
+build
+dist
+lib
+nbproject/private/
+node_modules
+out*
+upload
+t
 
 node.log
+web.start.js
+xyz.js
