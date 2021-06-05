@@ -23,7 +23,7 @@ If we introduce a conception (_birth_) of the "**_phenomenological understanding
 
 “Things happen” to people due to “where” they are in cognitive-emotional (_neuro-dimensional_) space-time and the coincidental energetic expressions present, both perceived and subliminal.
 
-NetMJ is a tool for describing the current condition of one's health/life/position (_is_) and desires for potential future conditions and movements (_will be_) as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarative statements (_self_-_evaluations_) representing one's coordinates with respect to both a psychological/physiological potential (_what_) and an exogenous/geospatial environment (_where_), as well as available modes of state alteration and/or transportation (_how_), as well as cognitive motivations which concern or interest one (_why_):
+NetMJ is a tool for describing the current condition of one's health/life/position (_is_) and desires for potential future conditions and movements (_will be_) as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarative statements (_self_-_evaluations_) representing one's coordinates with respect to both a psychological/physiological potential (_what_) and an exogenous/geospatial environment (_where_), along with all available modes of state alteration and/or transportation (_how_), as well as cognitive motivations which concern or interest one (_why_):
     
     Link the current and desired states 
     of real and imaginary concepts - 
