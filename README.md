@@ -12,12 +12,25 @@ Beginning with our conception of the "phenomenological understanding of a _place
     economical or psychological, 
     places *change*.
 
-NetMJ is a tool for describing the current condition of one's health/life/position (“is”) and desires for potential future conditions and movements (“will be”) as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarations representing one's coordinates with respect to a given environment ("where") and available modes of transportation ("how"), as well as cognitive aspects which concern or interest one ("why"):
+#### Why do things happen to the people that they happen to?
+
+If we introduce a conception (_birth_) of the "**_phenomenological understanding of a Human_ Agent _as a distinctive coming together of Life forms sharing functional mobility in space-time,_**" then we _observe_:
+
+    When Life *moves*, regardless of whether 
+    that motion is positional, virtual or 
+    chronological, Humans experience *change* 
+    and Human experience changes.
+
+“Things happen” to people due to “where” they are in cognitive-emotional (_neuro-dimensional_) space-time and the coincidental energetic expressions present, both perceived and subliminal.
+
+NetMJ is a tool for describing the current condition of one's health/life/position (_is_) and desires for potential future conditions and movements (_will be_) as linked data relationships. A semantic description of a health/location condition can be considered to consist of a set of declarative statements (_self_-_evaluations_) representing one's coordinates with respect to both a psychological/physiological potential (_what_) and an exogenous/geospatial environment (_where_), as well as available modes of state alteration and/or transportation (_how_), as well as cognitive motivations which concern or interest one (_why_):
     
     Link the current and desired states 
     of real and imaginary concepts - 
     including people, environments, 
     objects, processes, knowledge, or time.
+
+To describe the current condition of one's health/life/position, it is essential to recognize the vital systems of one’s own living organism.
 
 NetMJ realizes one’s goals based on their desires and translates them into tangible outcomes in one’s own network. The system can then connect your descriptions to others - these are analogous to hyperlinks.  Links are useful because they suggest ways to achieve the implied desired state of something - whether you need to obtain something, whether you have something to distribute, whether you want to participate in something, whether you want others to participate in something, whether you want someone to donate something to you for free, etc... 
 
