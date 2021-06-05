@@ -14,7 +14,7 @@ Beginning with our conception of the "phenomenological understanding of a _place
 
 #### Why do things happen to the people that they happen to?
 
-If we introduce a conception (_birth_) of the "**_phenomenological understanding of a Human_ Agent _as a distinctive coming together of Life forms sharing functional mobility in space-time,_**" then we _observe_:
+If we introduce a conception (_birth_) of the "**_phenomenological understanding of a_ Human Agent _as a distinctive coming together of Life forms sharing functional mobility in space-time,_**" then we _observe_:
 
     When Life *moves*, regardless of whether 
     that motion is positional, virtual or 
